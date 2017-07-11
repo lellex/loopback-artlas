@@ -1,0 +1,42 @@
+{
+  "name": "ExhibitionSectionHasCommittee",
+  "options": {
+    "idInjection": false,
+    "postgresql": {
+      "schema": "artlas",
+      "table": "exhibition_section_has_committee"
+    }
+  },
+  "properties": {
+    "idExhibitionSection": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_exhibition_section",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "idCommittee": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_committee",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    }
+  }
+}

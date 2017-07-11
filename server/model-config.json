@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Address": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "City": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "Exhibition": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "ExhibitedWork": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "ExhibitionCatalog": {
+    "public": true,
+    "dataSource": "artlas"
+  }
+}

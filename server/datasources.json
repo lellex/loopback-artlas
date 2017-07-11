@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "artlas": {
+    "host": "10.0.1.44",
+    "port": 5432,
+    "name": "artlas",
+    "database": "artlas",
+    "username": "basart",
+    "password": "password",
+    "connector": "postgresql"
+  }
+}
