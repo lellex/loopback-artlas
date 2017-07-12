@@ -1,22 +1,18 @@
 'use strict';
 
 module.exports = function(Exhibition) {
-//   Exhibition.getname = function(shopId, cb) {
-//     Exhibition.findById(shopId, function(err, instance) {
-//       var response = 'Name of coffee shop is ' + instance.name;
-//       cb(null, response);
-//       console.log(response);
-//     });
-//   };
-
   Exhibition.getByCity = function(city, cb) {
-    Exhibition.find({
-      include: [{
-        relation: 'exhibitionIdCityFkeyrel',
-      }],
-      where: {exhibitionIdCityFkeyrel: {name: city}},
-    }, function(errors, exhibitions) {
-      cb(null, exhibitions);
+    Exhibition.app.models.City.findOne({
+      where: {name: city},
+    }, function(errors, cityObj) {
+      Exhibition.find({
+        where: {idCity: cityObj.id},
+        include: [{
+          relation: 'exhibitionIdCityFkeyrel',
+        }],
+      }, function(errors, exhibitions) {
+        cb(null, exhibitions);
+      });
     });
   };
 
