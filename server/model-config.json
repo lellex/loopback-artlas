@@ -32,5 +32,17 @@
   "ExhibitionCatalog": {
     "public": true,
     "dataSource": "artlas"
+  },
+  "ExhibitionSection": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "ExhibitionGroup": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "ExhibitionGroupType": {
+    "public": true,
+    "dataSource": "artlas"
   }
 }
