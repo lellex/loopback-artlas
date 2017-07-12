@@ -5,7 +5,8 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibition_group_type"
-    }
+    },
+    "relations": {}
   },
   "properties": {
     "id": {

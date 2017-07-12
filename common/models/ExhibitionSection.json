@@ -5,6 +5,23 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibition_section"
+    },
+    "relations": {
+      "exhibitionSectionIdAddressFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idAddress"
+      },
+      "exhibitionSectionIdCatalogFkeyrel": {
+        "model": "ExhibitionCatalog",
+        "type": "belongsTo",
+        "foreignKey": "idCatalog"
+      },
+      "exhibitionSectionIdSpaceTypeFkeyrel": {
+        "model": "SpaceType",
+        "type": "belongsTo",
+        "foreignKey": "idSpaceType"
+      }
     }
   },
   "properties": {

@@ -5,6 +5,13 @@
     "postgresql": {
       "schema": "artlas",
       "table": "committee"
+    },
+    "relations": {
+      "committeeIdTypeFkeyrel": {
+        "model": "CommitteeType",
+        "type": "belongsTo",
+        "foreignKey": "idType"
+      }
     }
   },
   "properties": {

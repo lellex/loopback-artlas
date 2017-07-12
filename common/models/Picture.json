@@ -5,6 +5,13 @@
     "postgresql": {
       "schema": "artlas",
       "table": "picture"
+    },
+    "relations": {
+      "photoOeuvreIdOeuvreExposeeFkeyrel": {
+        "model": "ExhibitedWork",
+        "type": "belongsTo",
+        "foreignKey": "idExhibitedWork"
+      }
     }
   },
   "properties": {

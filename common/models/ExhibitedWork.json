@@ -5,6 +5,33 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibited_work"
+    },
+    "relations": {
+      "exhibitedWorkIdOwnerAddressFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idOwnerAddress"
+      },
+      "oeuvreExposeeIdAdresseConceptionFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idConceptionAddress"
+      },
+      "exhibitedWorkIdEndConceptionDateFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idEndConceptionDate"
+      },
+      "oeuvreExposeeIdDateConceptionFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idStartConceptionDate"
+      },
+      "oeuvreExposeeIdAExposeDansFkeyrel": {
+        "model": "HasExhibitedIn",
+        "type": "belongsTo",
+        "foreignKey": "idHasExhibitedIn"
+      }
     }
   },
   "properties": {

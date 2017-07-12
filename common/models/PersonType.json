@@ -5,7 +5,8 @@
     "postgresql": {
       "schema": "artlas",
       "table": "person_type"
-    }
+    },
+    "relations": {}
   },
   "properties": {
     "id": {

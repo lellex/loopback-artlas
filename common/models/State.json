@@ -5,6 +5,13 @@
     "postgresql": {
       "schema": "artlas",
       "table": "state"
+    },
+    "relations": {
+      "stateIdCountryFkeyrel": {
+        "model": "Country",
+        "type": "belongsTo",
+        "foreignKey": "idCountry"
+      }
     }
   },
   "properties": {

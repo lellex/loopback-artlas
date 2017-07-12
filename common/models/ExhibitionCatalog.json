@@ -5,6 +5,33 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibition_catalog"
+    },
+    "relations": {
+      "catalogueExpositionIdAdresseEditionFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idPublishingAddress"
+      },
+      "catalogueExpositionIdDateEditionFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idPublishingDate"
+      },
+      "exhibitionCatalogIdBeginDateFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idBeginDate"
+      },
+      "exhibitionCatalogIdEndDateFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idEndDate"
+      },
+      "exhibitionCatalogIdExhibitionFkeyrel": {
+        "model": "Exhibition",
+        "type": "belongsTo",
+        "foreignKey": "idExhibition"
+      }
     }
   },
   "properties": {

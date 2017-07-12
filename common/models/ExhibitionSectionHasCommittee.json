@@ -5,6 +5,18 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibition_section_has_committee"
+    },
+    "relations": {
+      "exhibitionSectionHasCommitteeIdCommitteeFkeyrel": {
+        "model": "Committee",
+        "type": "belongsTo",
+        "foreignKey": "idCommittee"
+      },
+      "exhibitionSectionHasCommitteeIdExhibitionSectionFkeyrel": {
+        "model": "ExhibitionSection",
+        "type": "belongsTo",
+        "foreignKey": "idExhibitionSection"
+      }
     }
   },
   "properties": {

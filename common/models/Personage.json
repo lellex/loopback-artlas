@@ -5,6 +5,53 @@
     "postgresql": {
       "schema": "artlas",
       "table": "personage"
+    },
+    "relations": {
+      "personageIdAddress1Fkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idAddress1"
+      },
+      "personageIdAddress2Fkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idAddress2"
+      },
+      "personnageIdAdresseMortFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idDeathAddress"
+      },
+      "personnageIdAdresseNaissanceFkeyrel": {
+        "model": "Address",
+        "type": "belongsTo",
+        "foreignKey": "idBirthAddress"
+      },
+      "personnageIdDateMortFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idDeathDate"
+      },
+      "personnageIdDateNaissanceFkeyrel": {
+        "model": "Date",
+        "type": "belongsTo",
+        "foreignKey": "idBirthDate"
+      },
+      "personnageIdCategorieFkeyrel": {
+        "model": "PersonType",
+        "type": "belongsTo",
+        "foreignKey": "idType"
+      },
+      "personnageIdArtisteFkeyrel": {
+        "model": "Personage",
+        "type": "belongsTo",
+        "foreignKey": "idPerson"
+      },
+      "personageIdUserArtistFkeyrel": {
+        "model": "User",
+        "type": "belongsTo",
+        "foreignKey": "idUserArtist"
+      }
     }
   },
   "properties": {

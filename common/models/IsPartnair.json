@@ -5,6 +5,18 @@
     "postgresql": {
       "schema": "artlas",
       "table": "is_partnair"
+    },
+    "relations": {
+      "estPartenaireOeuvreExposeeIdFkeyrel": {
+        "model": "ExhibitedWork",
+        "type": "belongsTo",
+        "foreignKey": "idExhibitedWork"
+      },
+      "estPartenairePersonnageIdFkeyrel": {
+        "model": "Personage",
+        "type": "belongsTo",
+        "foreignKey": "idPerson"
+      }
     }
   },
   "properties": {

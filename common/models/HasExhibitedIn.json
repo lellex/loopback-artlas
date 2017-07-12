@@ -5,6 +5,18 @@
     "postgresql": {
       "schema": "artlas",
       "table": "has_exhibited_in"
+    },
+    "relations": {
+      "hasExhibitedInIdExhibitionSectionFkeyrel": {
+        "model": "ExhibitionSection",
+        "type": "belongsTo",
+        "foreignKey": "idExhibitionSection"
+      },
+      "aExposeDansIdPersonnageFkeyrel": {
+        "model": "Personage",
+        "type": "belongsTo",
+        "foreignKey": "idPersonage"
+      }
     }
   },
   "properties": {

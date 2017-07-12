@@ -5,6 +5,18 @@
     "postgresql": {
       "schema": "artlas",
       "table": "exhibition"
+    },
+    "relations": {
+      "exhibitionIdCityFkeyrel": {
+        "model": "City",
+        "type": "belongsTo",
+        "foreignKey": "idCity"
+      },
+      "exhibitionIdExhibitionGroupFkeyrel": {
+        "model": "ExhibitionGroup",
+        "type": "belongsTo",
+        "foreignKey": "idExhibitionGroup"
+      }
     }
   },
   "properties": {

@@ -5,6 +5,13 @@
     "postgresql": {
       "schema": "artlas",
       "table": "catalog_article"
+    },
+    "relations": {
+      "articleDeCatalogueIdCatalogueFkeyrel": {
+        "model": "ExhibitionCatalog",
+        "type": "belongsTo",
+        "foreignKey": "idCatalog"
+      }
     }
   },
   "properties": {
