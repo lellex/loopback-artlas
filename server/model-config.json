@@ -21,6 +21,10 @@
     "public": true,
     "dataSource": "artlas"
   },
+  "Country": {
+    "public": true,
+    "dataSource": "artlas"
+  },
   "Exhibition": {
     "public": true,
     "dataSource": "artlas"
@@ -42,6 +46,10 @@
     "dataSource": "artlas"
   },
   "ExhibitionGroupType": {
+    "public": true,
+    "dataSource": "artlas"
+  },
+  "State": {
     "public": true,
     "dataSource": "artlas"
   }
